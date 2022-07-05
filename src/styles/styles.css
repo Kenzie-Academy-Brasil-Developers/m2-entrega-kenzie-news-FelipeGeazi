@@ -6,7 +6,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -15,6 +15,7 @@ body {
     gap: 25px;
     border: 1px solid red;
     padding: auto;
+    margin: auto;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 80px;
-    width: 100vw;
+    width: 100%;
     background-color: #5163D3;
 }
 
@@ -36,7 +37,7 @@ header {
     justify-content: flex-end;
     gap: 20px;
     padding: 25px;
-    width: 100vw;
+    width: 100%;
     height: 385px;
     background-image: url("../img/image\ 3.png");
     opacity: 0.90;
@@ -81,7 +82,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 30px;
-    width: 1005;
+    width: 100%;
     background: #EEEEEE;
     text-align: center;
 }
@@ -108,7 +109,6 @@ footer {
 
 .divMateria {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     width: 90%;
     height: 180px;
@@ -120,25 +120,27 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     gap: 10px;
+    border: 1px solid red
 }
 
 .divCategoria {
     width: 30%;
     height: 18px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 2px 8px;
-    gap: 10px;
+    gap: 10%;
     background: #D7E4FB;
     border-radius: 4px;
+    text-overflow: ellipsis;
 }
 
 .tituloCategoria {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.5rem;
     line-height: 14px;
     color: #5163D3;
     flex: none;
@@ -150,7 +152,7 @@ footer {
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 0.7rem;
     line-height: 110%;
     color: #5163D3;
 }
@@ -159,8 +161,8 @@ footer {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 0.6rem;
+    line-height: 140%;
     color: #1B1C1E;
 }
 
@@ -173,20 +175,36 @@ footer {
     color: #1B1C1E;
 }
 
-@media (min-width: 700px) {
+.imgFull {
+    display: none;
+    width: 30%;
+    height: ;
+}
+
+.divTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-overflow: ellipsis;
+    gap: 5%;
+}
+
+@media (min-width: 1080px) {
     #SectionArtigos {
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
         margin: auto;
         border: 1px solid red;
     }
+    .divTexto {
+        height: 100%;
+    }
     .divMateria {
-        width: 40%;
-        flex-direction: row;
+        width: 45%;
+        text-overflow: ellipsis;
     }
     .imgFull {
-        width: 270px;
-        height: 180px;
+        display: block;
     }
 }

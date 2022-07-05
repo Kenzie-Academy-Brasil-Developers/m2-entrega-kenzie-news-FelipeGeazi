@@ -7,6 +7,10 @@ class Requisicao {
             .catch(err => err)
 
         console.log(dados)
+
+
+
+
         return dados
 
     }
