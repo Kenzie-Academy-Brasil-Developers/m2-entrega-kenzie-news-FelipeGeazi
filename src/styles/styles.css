@@ -13,7 +13,6 @@ body {
     justify-content: space-between;
     background-color: aliceblue;
     gap: 25px;
-    border: 1px solid red;
     padding: auto;
     margin: auto;
 }
@@ -102,7 +101,6 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     width: 80%;
-    border: 1px solid blueviolet;
     margin: auto;
     gap: 10px
 }
@@ -120,7 +118,6 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     gap: 10px;
-    border: 1px solid red
 }
 
 .divCategoria {
@@ -195,7 +192,6 @@ footer {
         display: flex;
         flex-wrap: wrap;
         margin: auto;
-        border: 1px solid red;
     }
     .divTexto {
         height: 100%;
